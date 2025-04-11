@@ -111,6 +111,10 @@
 
         casks = [
           {
+            name = "ukelele";
+            greedy = true;
+          }
+          {
             name = "mqtt-explorer";
             greedy = true;
           }
