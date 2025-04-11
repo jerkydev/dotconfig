@@ -61,12 +61,12 @@
           "tilt-dev/tap"
           "fluxcd/tap"
           "derailed/k9s"
-          "qmk/qmk"
+          "nikitabobko/tap"
+          "FelixKratz/formulae"
         ];
 
         brews = [
           "bat"
-          "broot"
           "dua-cli"
           "duf"
           "eza"
@@ -100,16 +100,28 @@
           "kind"
           "unar"
           "xh"
-          "zellij"
           "zoxide"
           "zsh-autosuggestions"
           "zsh-history-substring-search"
-          "watch"
           "derailed/k9s/k9s"
-          "qmk/qmk/qmk"
+          "tmux"
+          "neovim"
+          "FelixKratz/formulae/sketchybar"
         ];
 
         casks = [
+          {
+            name = "ghostty";
+            greedy = true;
+          }
+          {
+            name = "wezterm";
+            greedy = true;
+          }
+          {
+            name = "nikitabobko/tap/aerospace";
+            greedy = true;
+          }
           {
             name = "ukelele";
             greedy = true;
@@ -151,10 +163,6 @@
           }
           {
             name = "iina";
-            greedy = true;
-          }
-          {
-            name = "qmk-toolbox";
             greedy = true;
           }
           {
