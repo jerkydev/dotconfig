@@ -322,13 +322,13 @@
       "modifierFlags" : 786432
     },
     "topLeft" : {
-      "keyCode" : 32,
+      "keyCode" : 4,
       "modifierFlags" : 786432
     },
     "topRight" : {
-      "keyCode" : 34,
+      "keyCode" : 37,
       "modifierFlags" : 786432
     }
   },
-  "version" : "91"
+  "version" : "93"
 }
