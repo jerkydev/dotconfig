@@ -139,10 +139,6 @@
             greedy = true;
           }
           {
-            name = "alacritty";
-            greedy = true;
-          }
-          {
             name = "dbeaver-community";
             greedy = true;
           }          {

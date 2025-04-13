@@ -23,10 +23,6 @@
     recursive = true;
   };
 
-  home.file.".config/alacritty" = {
-    source = ./alacritty;
-    recursive = true;
-  };
   home.file."Library/KeyBindings" = {
     source = ./key_bindings;
     recursive = true;
