@@ -115,10 +115,6 @@
             greedy = true;
           }
           {
-            name = "wezterm";
-            greedy = true;
-          }
-          {
             name = "nikitabobko/tap/aerospace";
             greedy = true;
           }
