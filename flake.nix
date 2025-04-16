@@ -179,10 +179,6 @@
             greedy = true;
           }
           {
-            name = "rectangle";
-            greedy = true;
-          }
-          {
             name = "slack";
             greedy = true;
           }
@@ -322,6 +318,8 @@
           };
           
           ActivityMonitor.ShowCategory = 100;  # show all processes
+
+          spaces.spans-displays = true;
           
           # Customize settings that not supported by nix-darwin directly
           # see the source code of this project to get more undocumented options:

@@ -23,12 +23,13 @@
     recursive = true;
   };
 
-  home.file."Library/KeyBindings" = {
-    source = ./key_bindings;
+  home.file.".config/aerospace" = {
+    source = ./aerospace;
     recursive = true;
   };
-  home.file."Library/Application\ Support/Rectangle" = {
-    source = ./rectangle;
+
+  home.file."Library/KeyBindings" = {
+    source = ./key_bindings;
     recursive = true;
   };
   programs.home-manager.enable = true;
