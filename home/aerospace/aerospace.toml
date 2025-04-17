@@ -72,6 +72,10 @@ automatically-unhide-macos-hidden-apps = true
     if.app-name-regex-substring = 'telegram'
     run = ['layout floating']
 
+[[on-window-detected]]
+    if.app-name-regex-substring = 'ukelele'
+    run = ['layout floating']
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
