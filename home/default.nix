@@ -1,4 +1,4 @@
-{ username, ... }:
+{ username, config, ... }:
 
 {
   # import sub modules
@@ -14,17 +14,17 @@
   };
 
   home.file.".config/helix" = {
-    source = ./helix;
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dev/dotconfig/home/helix";
     recursive = true;
   };
 
   home.file.".config/oh-my-posh" = {
-    source = ./oh-my-posh;
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dev/dotconfig/home/oh-my-posh";
     recursive = true;
   };
 
   home.file.".config/aerospace" = {
-    source = ./aerospace;
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dev/dotconfig/home/aerospace";
     recursive = true;
   };
 
