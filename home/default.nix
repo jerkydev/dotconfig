@@ -28,6 +28,11 @@
     recursive = true;
   };
 
+  home.file.".config/tmux" = {
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/dev/dotconfig/home/tmux";
+    recursive = true;
+  };
+
   home.file."Library/KeyBindings" = {
     source = ./key_bindings;
     recursive = true;

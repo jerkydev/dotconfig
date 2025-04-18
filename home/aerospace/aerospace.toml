@@ -111,6 +111,8 @@ automatically-unhide-macos-hidden-apps = true
 
     ctrl-alt-shift-t = 'exec-and-forget open -a /Applications/Ghostty.app'
     ctrl-alt-shift-b = 'exec-and-forget open -a /Applications/Firefox.app'
+    ctrl-alt-shift-c = 'exec-and-forget open -a /Applications/Visual\ Studio\ Code.app'
+    ctrl-alt-shift-n = 'exec-and-forget open -a /Applications/Obsidian.app'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     ctrl-alt-shift-slash = 'layout tiles horizontal vertical'
