@@ -47,14 +47,6 @@
             "type": "git"
           },
           {
-            "background": "#003543",
-            "foreground": "#fff",
-            "powerline_symbol": "",
-            "style": "powerline",
-            "template": "<#fff>  </>{{ .CurrentDate | date .Format }} ",
-            "type": "time"
-          },
-          {
             "background": "#83769c",
             "foreground": "#ffffff",
             "properties": {
