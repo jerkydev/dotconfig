@@ -107,6 +107,7 @@
           "tmux"
           "neovim"
           "FelixKratz/formulae/sketchybar"
+          "lazygit"
         ];
 
         casks = [
