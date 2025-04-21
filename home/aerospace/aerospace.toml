@@ -69,10 +69,6 @@ automatically-unhide-macos-hidden-apps = true
     run = ['layout floating']
 
 [[on-window-detected]]
-    if.app-name-regex-substring = 'telegram'
-    run = ['layout floating']
-
-[[on-window-detected]]
     if.app-name-regex-substring = 'ukelele'
     run = ['layout floating']
 
@@ -86,6 +82,10 @@ automatically-unhide-macos-hidden-apps = true
 
 [[on-window-detected]]
     if.app-id = 'com.tinyspeck.slackmacgap'
+    run = ['move-node-to-workspace 8']
+
+[[on-window-detected]]
+    if.app-name-regex-substring = 'telegram'
     run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]
