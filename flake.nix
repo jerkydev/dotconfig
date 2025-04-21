@@ -108,6 +108,8 @@
           "neovim"
           "FelixKratz/formulae/sketchybar"
           "lazygit"
+          "watchexec"
+          "gnuplot"
         ];
 
         casks = [

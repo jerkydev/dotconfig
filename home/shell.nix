@@ -32,9 +32,9 @@
         bindkey '^[[4~' end-of-line
         bindkey '^[[3~' delete-char
 
-        export PATH=$PATH:~/.cargo/bin/
-
         eval "$(zoxide init zsh)"
+
+        export PATH="$HOME/.cargo/bin:$PATH"
 
         neofetch
     '';
