@@ -114,6 +114,10 @@
 
         casks = [
           {
+            name = "syncthing";
+            greedy = true;
+          }
+          {
             name = "ghostty";
             greedy = true;
           }
