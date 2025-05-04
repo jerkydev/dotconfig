@@ -126,6 +126,10 @@
             greedy = true;
           }
           {
+            name = "openzfs";
+            greedy = true;
+          }
+          {
             name = "ukelele";
             greedy = true;
           }

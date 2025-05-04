@@ -145,14 +145,25 @@ automatically-unhide-macos-hidden-apps = true
     ctrl-alt-shift-a = 'exec-and-forget open -a /Applications/Spotify.app'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    ctrl-alt-shift-slash = 'layout tiles horizontal vertical'
-    ctrl-alt-shift-comma = 'layout accordion horizontal vertical'
+    ctrl-alt-cmd-shift-slash = 'layout tiles horizontal vertical'
+    ctrl-alt-cmd-shift-comma = 'layout accordion horizontal vertical'
+
+    # Toggle windows in and out of the tiling layout/floating
+    # See: https://nikitabobko.github.io/AeroSpace/commands#layout
+    ctrl-alt-cmd-shift-f = 'layout floating tiling'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     ctrl-alt-shift-h = 'focus left'
     ctrl-alt-shift-j = 'focus down'
     ctrl-alt-shift-k = 'focus up'
     ctrl-alt-shift-l = 'focus right'
+
+    # Move windows to other nodes
+    # See: https://nikitabobko.github.io/AeroSpace/commands#join-with
+    ctrl-alt-cmd-shift-h = 'join-with left'
+    ctrl-alt-cmd-shift-j = 'join-with down'
+    ctrl-alt-cmd-shift-k = 'join-with up'
+    ctrl-alt-cmd-shift-l = 'join-with right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
     ctrl-alt-shift-minus = 'resize smart -50'
@@ -188,5 +199,4 @@ automatically-unhide-macos-hidden-apps = true
 [mode.service.binding]
     esc = ['reload-config', 'mode main']
     r = ['flatten-workspace-tree', 'mode main'] # reset layout
-    f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
     backspace = ['close-all-windows-but-current', 'mode main']
