@@ -122,6 +122,10 @@
             greedy = true;
           }
           {
+            name = "zoom";
+            greedy = true;
+          }
+          {
             name = "nikitabobko/tap/aerospace";
             greedy = true;
           }
