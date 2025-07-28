@@ -225,6 +225,10 @@
             name = "visual-studio-code";
             greedy = true;
           }
+          {
+            name = "discord";
+            greedy = true;
+          }
         ];
 
         masApps = {
