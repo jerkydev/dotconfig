@@ -198,7 +198,7 @@
             greedy = true;
           }
           {
-            name = "spotify";
+            name = "deezer";
             greedy = true;
           }
           {
