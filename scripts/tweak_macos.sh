@@ -106,3 +106,18 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 # Time Machine: Prevent prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+# Disable automatic capitalization as it’s annoying when typing code
+defaults write -g NSAutomaticCapitalizationEnabled -bool false
+
+# Disable smart dashes as they’re annoying when typing code
+defaults write -g NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable automatic period substitution as it’s annoying when typing code
+defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
+
+# Disable smart quotes as they’re annoying when typing code
+defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable autocorrect
+defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
