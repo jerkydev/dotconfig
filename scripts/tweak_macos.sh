@@ -8,6 +8,9 @@ sudo nvram StartupMute=%01
 # Trackpad tracking speed
 defaults write -g com.apple.trackpad.scaling -float 1.5
 
+# Tap to click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
 # Set a fast keyboard repeat rate, and make it happen more quickly.
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
