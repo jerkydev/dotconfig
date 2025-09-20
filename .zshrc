@@ -2,7 +2,7 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/unicorn.omp.json)"
 fi
 
-if brew --version > /dev/null; then
+if brew --version > /dev/null 2>&1; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
     source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
