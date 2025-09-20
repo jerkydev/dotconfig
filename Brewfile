@@ -1,4 +1,76 @@
+# GUI
+
 cask "keepassxc"
 cask "telegram"
 cask "zen"
+cask "ghostty"
+cask "zoom"
+cask "ukelele"
+tap "nikitabobko/tap"
+cask "nikitabobko/tap/aerospace"
+cask "font-meslo-lg-nerd-font"
+cask "mos", args: { no_quarantine: true }
+cask "obsidian"
+cask "deezer"
+cask "sublime-text"
+cask "the-unarchiver"
+cask "visual-studio-code"
+cask "iina"
+cask "numi"
+cask "maccy"
+cask "marta"
+
+# CLI
+
 brew "stow"
+brew "duf"
+brew "eza"
+brew "fd"
+brew "fzf"
+brew "just"
+brew "neofetch"
+brew "oh-my-posh"
+brew "scc"
+brew "telnet"
+brew "unar"
+brew "xh"
+brew "zoxide"
+brew "zsh-autosuggestions"
+brew "zsh-history-substring-search"
+brew "watchexec"
+
+# TUI
+
+brew "dua-cli"
+brew "helix"
+brew "mactop"
+brew "lazydocker"
+brew "tmux"
+brew "neovim"
+brew "lazygit"
+
+# WORK
+
+cask "mqtt-explorer"
+cask "dbeaver-community"
+cask "openvpn-connect"
+cask "postman"
+cask "slack"
+
+tap "fluxcd/tap"
+brew "fluxcd/tap/flux"
+brew "helm"
+brew "kubelogin"
+brew "k3d"
+brew "libpq", link: true
+brew "logcli"
+brew "mongosh"
+brew "node"
+brew "helm-docs"
+brew "openssl@3"
+brew "stern"
+brew "tilt"
+brew "minikube"
+brew "kind"
+brew "k9s"
+brew "gnuplot"

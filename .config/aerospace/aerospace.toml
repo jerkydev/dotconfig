@@ -77,7 +77,7 @@ automatically-unhide-macos-hidden-apps = true
     run = ['layout floating']
 
 [[on-window-detected]]
-    if.app-id = 'com.spotify.client'
+    if.app-name-regex-substring = 'deezer'
     run = ['move-node-to-workspace 9']
 
 [[on-window-detected]]
@@ -97,7 +97,7 @@ automatically-unhide-macos-hidden-apps = true
     run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
-    if.app-id = 'org.mozilla.firefox'
+    if.app-id = 'app.zen-browser.zen'
     run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]
@@ -138,11 +138,11 @@ automatically-unhide-macos-hidden-apps = true
     # '''
 
     ctrl-alt-shift-t = 'exec-and-forget open -a /Applications/Ghostty.app'
-    ctrl-alt-shift-b = 'exec-and-forget open -a /Applications/Firefox.app'
+    ctrl-alt-shift-b = 'exec-and-forget open -a /Applications/Zen.app'
     ctrl-alt-shift-c = 'exec-and-forget open -a /Applications/Visual\ Studio\ Code.app'
     ctrl-alt-shift-n = 'exec-and-forget open -a /Applications/Obsidian.app'
     ctrl-alt-shift-m = 'exec-and-forget open -a /Applications/Slack.app'
-    ctrl-alt-shift-a = 'exec-and-forget open -a /Applications/Spotify.app'
+    ctrl-alt-shift-a = 'exec-and-forget open -a /Applications/Deezer.app'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     ctrl-alt-cmd-shift-slash = 'layout tiles horizontal vertical'
