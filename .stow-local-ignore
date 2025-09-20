@@ -1,5 +1,6 @@
 scripts
 .git
 .gitmodules
+.gitignore
 LICENSE
 README.md

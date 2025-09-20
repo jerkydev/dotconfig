@@ -7,6 +7,7 @@ My working environment configs
 1. ```
    git clone https://github.com/jerkydev/dotconfig.git .dotconfig
    cd .dotconfig
+   git submodule update --init --recursive
    brew install stow
    stow .
    brew bundle
