@@ -1,22 +1,16 @@
-#!/bin/bash
-set -e
+#!/bin/zsh
+
 sudo -v
 
 # Disable the startup chime on boot
 sudo nvram StartupMute=%01
 
 # Trackpad tracking speed
-defaults write -g com.apple.trackpad.scaling -float 3
+defaults write -g com.apple.trackpad.scaling -float 1.5
 
 # Set a fast keyboard repeat rate, and make it happen more quickly.
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
-
-# Show remaining battery percentage
-defaults write com.apple.controlcenter.plist BatteryShowPercentage -bool true
-
-# Show Bluetooth icon in menu bar
-defaults write com.apple.controlcenter.plist Bluetooth -int 18
 
 # Change default location for screenshots
 mkdir -p $HOME/screenshots
@@ -73,15 +67,13 @@ sudo chflags nohidden /Volumes
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Autohide the Dock when the mouse is out
-defaults write com.apple.dock "autohide" -bool "true"
+defaults write com.apple.dock "autohide" -bool true
 
 # Remove the Dock autohide animation
 defaults write com.apple.dock "autohide-time-modifier" -float "0"
 
 # Remove the autohide delay, the Dock appears instantly
 defaults write com.apple.dock "autohide-delay" -float "0"
-
-killall Dock
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
@@ -121,3 +113,5 @@ defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Disable autocorrect
 defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
+
+killall Dock

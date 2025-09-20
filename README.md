@@ -3,30 +3,13 @@ My working environment configs
 
 ## First Install
 
-1. Change hostname:
-
-    ```shell
-    sudo scutil --set HostName <new host name>
-    sudo scutil --set LocalHostName <new host name>
-    sudo scutil --set ComputerName <new name>
-    ```
-
-1. Edit hostname in the nix file
-
-1. Turn FileVault off
-
-1. Install temporary just for single use
-
-    ```shell
-    curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /tmp
-    ```
-
-1. Run command
-
-    ```shell
-    /tmp/just install
-    rm -rf /tmp/just
-    ```
-
-1. Turn FileVault on
+1. Install homebrew
+1. ```
+   git clone https://github.com/jerkydev/dotconfig.git .dotconfig
+   cd .dotconfig
+   brew install stow
+   stow .
+   brew bundle
+   ./scripts/tweak_macos.sh
+   ```
 

@@ -16,6 +16,8 @@ cask "the-unarchiver"
 cask "visual-studio-code"
 cask "iina"
 cask "numi"
+cask "maccy"
+cask "marta"
 
 # CLI
 
@@ -54,6 +56,7 @@ cask "openvpn-connect"
 cask "postman"
 cask "slack"
 
+tap "fluxcd/tap"
 brew "fluxcd/tap/flux"
 brew "helm"
 brew "kubelogin"
