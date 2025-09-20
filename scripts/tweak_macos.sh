@@ -20,6 +20,12 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGes
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
 
+# Show remaining battery percentage
+defaults write com.apple.controlcenter.plist BatteryShowPercentage -bool true
+
+# Show Bluetooth icon in menu bar
+defaults write com.apple.controlcenter.plist Bluetooth -int 18
+
 # Change default location for screenshots
 mkdir -p $HOME/screenshots
 defaults write com.apple.screencapture location -string "$HOME/screenshots"

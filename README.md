@@ -12,4 +12,5 @@ My working environment configs
    brew bundle
    ./scripts/tweak_macos.sh
    ```
+1. Reboot
 
