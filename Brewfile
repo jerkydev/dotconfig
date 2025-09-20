@@ -19,6 +19,7 @@ cask "iina"
 cask "numi"
 cask "maccy"
 cask "marta"
+cask "container"
 
 # CLI
 
@@ -56,6 +57,7 @@ cask "dbeaver-community"
 cask "openvpn-connect"
 cask "postman"
 cask "slack"
+cask "mongodb-compass"
 
 tap "fluxcd/tap"
 brew "fluxcd/tap/flux"
