@@ -11,6 +11,11 @@ defaults write -g com.apple.trackpad.scaling -float 1.5
 # Tap to click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
+# Dragging with three finger drag 
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -bool false
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -bool false
+
 # Set a fast keyboard repeat rate, and make it happen more quickly.
 defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 2
