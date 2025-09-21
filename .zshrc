@@ -5,6 +5,9 @@ fi
 if brew --version > /dev/null 2>&1; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
+    autoload -Uz compinit
+    compinit
+
     source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     export LC_ALL=en_US.UTF-8
     export LANG=en_US.UTF-8
