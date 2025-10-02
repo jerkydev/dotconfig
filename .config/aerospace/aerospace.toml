@@ -145,8 +145,8 @@ automatically-unhide-macos-hidden-apps = true
     ctrl-alt-shift-a = 'exec-and-forget open -a /Applications/Deezer.app'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    ctrl-alt-cmd-shift-slash = 'layout tiles horizontal vertical'
-    ctrl-alt-cmd-shift-comma = 'layout accordion horizontal vertical'
+    ctrl-alt-shift-slash = 'layout tiles horizontal vertical'
+    ctrl-alt-shift-comma = 'layout accordion horizontal vertical'
 
     # Toggle windows in and out of the tiling layout/floating
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
