@@ -1,0 +1,212 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "palette": {
+    "base": "#1E1E2E",
+    "blue": "#89B4FA",
+    "crust": "#11111B",
+    "docker": "p:sky",
+    "false": "p:red",
+    "flamingo": "#F2CDCD",
+    "git": "p:lavender",
+    "go": "p:mauve",
+    "green": "#A6E3A1",
+    "haskell": "p:mauve",
+    "julia": "p:mauve",
+    "lavender": "#B4BEFE",
+    "lua": "p:mauve",
+    "mantle": "#181825",
+    "maroon": "#EBA0AC",
+    "mauve": "#CBA6F7",
+    "os-bg": "p:overlay1",
+    "os-fg": "p:base",
+    "overlay0": "#6C7086",
+    "overlay1": "#7F849C",
+    "overlay2": "#9399B2",
+    "path": "p:yellow",
+    "peach": "#FAB387",
+    "pink": "#F5C2E7",
+    "python": "p:mauve",
+    "red": "#F38BA8",
+    "root-bg": "p:yellow",
+    "root-fg": "p:base",
+    "rosewater": "#F5E0DC",
+    "rust": "p:mauve",
+    "sapphire": "#74C7EC",
+    "sky": "#89DCEB",
+    "subtext0": "#A6ADC8",
+    "subtext1": "#BAC2DE",
+    "surface0": "#313244",
+    "surface1": "#45475A",
+    "surface2": "#585B70",
+    "teal": "#94E2D5",
+    "text": "#CDD6F4",
+    "time": "p:overlay1",
+    "true": "p:green",
+    "yellow": "#F9E2AF"
+  },
+  "transient_prompt": {
+    "template": "{{ now | date \"15:04:05\" }} {{ if gt .Code 0 }}<p:false>❯</>{{ else }}<p:true>❯</>{{ end }} ",
+    "foreground": "p:time"
+  },
+  "console_title_template": "{{ .Shell }} in {{ .PWD }}",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "cache_duration": "none",
+            "windows": "\ue70f"
+          },
+          "trailing_diamond": "\ue0b0",
+          "template": " {{ .Icon }} ",
+          "foreground": "p:os-fg",
+          "background": "p:os-bg",
+          "type": "os",
+          "style": "diamond",
+          "foreground_templates": [
+            "{{ if .Root }}p:root-fg{{ end }}"
+          ],
+          "background_templates": [
+            "{{ if .Root }}p:root-bg{{ end }}"
+          ]
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "folder_icon": "..",
+            "home_icon": "~",
+            "style": "agnoster_short"
+          },
+          "template": " {{ .Path }} ",
+          "foreground": "p:path",
+          "type": "path",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "cache_duration": "none",
+            "cherry_pick_icon": "\ue29b ",
+            "commit_icon": "\uf417 ",
+            "fetch_stash_count": false,
+            "fetch_status": false,
+            "fetch_upstream_icon": false,
+            "merge_icon": "\ue727 ",
+            "no_commits_icon": "\uf0c3 ",
+            "rebase_icon": "\ue728 ",
+            "revert_icon": "\uf0e2 ",
+            "tag_icon": "\uf412 "
+          },
+          "template": "{{ .HEAD }} ",
+          "foreground": "p:git",
+          "type": "git",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\uf308 {{ .Context }} ",
+          "foreground": "p:docker",
+          "type": "docker",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue627 {{ if not .Error }}{{ .Full }}{{ end }} ",
+          "foreground": "p:go",
+          "type": "go",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue61f {{ if not .Error }}{{ .Full }}{{ end }} ",
+          "foreground": "p:haskell",
+          "type": "haskell",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue624 {{ if not .Error }}{{ .Full }}{{ end }} ",
+          "foreground": "p:julia",
+          "type": "julia",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue620 {{ if not .Error }}{{ .Full }}{{ end }} ",
+          "foreground": "p:lua",
+          "type": "lua",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "display_default": false,
+            "display_mode": "context"
+          },
+          "template": "\ue73c {{ if not .Error }}{{ if .Venv }}venv/{{ end }}{{ .Full }}{{ end }} ",
+          "foreground": "p:python",
+          "type": "python",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "\ue7a8 {{ if not .Error }}{{ .Full }}{{ end }} ",
+          "foreground": "p:rust",
+          "type": "rust",
+          "style": "plain"
+        },
+        {
+          "properties": {
+            "cache_duration": "none",
+            "style": "austin",
+            "threshold": 500
+          },
+          "template": "\udb81\udd1f {{ .FormattedMs }} ",
+          "foreground": "p:true",
+          "type": "executiontime",
+          "style": "plain",
+          "foreground_templates": [
+            "{{ if .Code }}p:false{{ end }}"
+          ]
+        }
+      ],
+      "newline": true
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "properties": {
+            "always_enabled": true,
+            "cache_duration": "none"
+          },
+          "template": "❯ ",
+          "foreground": "p:true",
+          "type": "status",
+          "style": "plain",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}p:false{{ end }}"
+          ]
+        }
+      ],
+      "newline": true
+    }
+  ],
+  "version": 3,
+  "shell_integration": true
+}

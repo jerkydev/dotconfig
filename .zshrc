@@ -1,5 +1,5 @@
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-    eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/unicorn.omp.json)"
+    eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/mocha.omp.json)"
 fi
 
 autoload -Uz compinit && compinit
@@ -12,6 +12,10 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit load zsh-users/zsh-autosuggestions
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+zinit load marlonrichert/zsh-autocomplete
+zinit load zsh-users/zsh-syntax-highlighting
+zinit load MichaelAquilina/zsh-you-should-use
 
 zinit load zsh-users/zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
