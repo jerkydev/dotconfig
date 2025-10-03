@@ -132,3 +132,6 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write com.apple.dock expose-group-apps -bool true
 
 killall Dock
+
+# https://nikitabobko.github.io/AeroSpace/guide#a-note-on-displays-have-separate-spaces
+defaults write com.apple.spaces spans-displays -bool true && killall SystemUIServer

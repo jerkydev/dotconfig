@@ -39,8 +39,6 @@ brew "unar"
 brew "watchexec"
 brew "xh"
 brew "zoxide"
-brew "zsh-autosuggestions"
-brew "zsh-history-substring-search"
 
 # TUI
 

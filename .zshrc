@@ -2,25 +2,29 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/unicorn.omp.json)"
 fi
 
+autoload -Uz compinit && compinit
+
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+source "${ZINIT_HOME}/zinit.zsh"
+
+zinit load zsh-users/zsh-autosuggestions
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+zinit load zsh-users/zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[4~' end-of-line
+bindkey '^[[3~' delete-char
+
 if brew --version > /dev/null 2>&1; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
-
-    autoload -Uz compinit
-    compinit
-
-    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-    export LC_ALL=en_US.UTF-8
-    export LANG=en_US.UTF-8
-
-    source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-    bindkey '^[[A' history-substring-search-up
-    bindkey '^[[B' history-substring-search-down
-
-    bindkey '^[[H' beginning-of-line
-    bindkey '^[[F' end-of-line
-    bindkey '^[[1~' beginning-of-line
-    bindkey '^[[4~' end-of-line
-    bindkey '^[[3~' delete-char
 fi
 
 export HISTSIZE=100000
