@@ -24,6 +24,7 @@ zinit light Aloxaf/fzf-tab
 zinit light MichaelAquilina/zsh-you-should-use
 zinit light arzzen/calc.plugin.zsh
 zinit light atuinsh/atuin
+zinit light hlissner/zsh-autopair
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
