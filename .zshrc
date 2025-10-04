@@ -1,4 +1,4 @@
-if [ -z $TMUX ]; then; tmux -t TMUX || tmux new -s TMUX; fi
+if [ -z $TMUX ]; then; tmux -t tmux || tmux new -s tmux; fi
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/mocha.omp.json)"
