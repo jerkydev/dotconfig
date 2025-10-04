@@ -13,10 +13,11 @@ zinit load zsh-users/zsh-autosuggestions
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+zinit load zdharma-continuum/fast-syntax-highlighting
+
 zinit load marlonrichert/zsh-autocomplete
 zstyle ':autocomplete:*' delay 2.0
 
-zinit load zdharma-continuum/fast-syntax-highlighting
 zinit load MichaelAquilina/zsh-you-should-use
 zinit load arzzen/calc.plugin.zsh
 zinit load atuinsh/atuin
