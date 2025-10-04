@@ -4,6 +4,10 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
     eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/mocha.omp.json)"
 fi
 
+if brew --version > /dev/null 2>&1; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 autoload -Uz compinit && compinit
 
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -11,28 +15,21 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
 
-zinit load zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-autosuggestions
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-zinit load zdharma-continuum/fast-syntax-highlighting
-
-zinit load marlonrichert/zsh-autocomplete
-zstyle ':autocomplete:*' delay 2.0
-
-zinit load MichaelAquilina/zsh-you-should-use
-zinit load arzzen/calc.plugin.zsh
-zinit load atuinsh/atuin
+zinit light zdharma-continuum/fast-syntax-highlighting
+zinit light Aloxaf/fzf-tab
+zinit light MichaelAquilina/zsh-you-should-use
+zinit light arzzen/calc.plugin.zsh
+zinit light atuinsh/atuin
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[1~' beginning-of-line
 bindkey '^[[4~' end-of-line
 bindkey '^[[3~' delete-char
-
-if brew --version > /dev/null 2>&1; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
 
 export HISTSIZE=100000
 export SAVEHIST=$HISTSIZE
