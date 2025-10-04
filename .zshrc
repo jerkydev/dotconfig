@@ -26,9 +26,9 @@ zinit load atuinsh/atuin
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
-# bindkey '^[[1~' beginning-of-line
-# bindkey '^[[4~' end-of-line
-# bindkey '^[[3~' delete-char
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[4~' end-of-line
+bindkey '^[[3~' delete-char
 
 if brew --version > /dev/null 2>&1; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -57,3 +57,4 @@ alias -- ls=eza
 alias -- tree='eza --tree'
 alias -- x='cargo xtask'
 alias -- zz='z -'
+alias -- hx=helix

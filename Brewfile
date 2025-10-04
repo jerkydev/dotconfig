@@ -9,6 +9,7 @@ cask "keepassxc"
 cask "maccy"
 cask "marta"
 cask "mos", args: { no_quarantine: true }
+cask "netbirdio/tap/netbird-ui"
 tap  "nikitabobko/tap"
 cask "nikitabobko/tap/aerospace"
 cask "numi"
