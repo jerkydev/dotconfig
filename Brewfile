@@ -23,6 +23,7 @@ cask "zoom"
 
 # CLI
 
+brew "atuin"
 brew "duf"
 brew "eza"
 brew "fd"

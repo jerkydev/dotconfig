@@ -13,20 +13,19 @@ zinit load zsh-users/zsh-autosuggestions
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# zinit load zsh-users/zsh-history-substring-search
-# bindkey '^[[A' history-substring-search-up
-# bindkey '^[[B' history-substring-search-down
-
 zinit load marlonrichert/zsh-autocomplete
+zstyle ':autocomplete:*' delay 2.0
+
 zinit load zdharma-continuum/fast-syntax-highlighting
 zinit load MichaelAquilina/zsh-you-should-use
 zinit load arzzen/calc.plugin.zsh
+zinit load atuinsh/atuin
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
-bindkey '^[[1~' beginning-of-line
-bindkey '^[[4~' end-of-line
-bindkey '^[[3~' delete-char
+# bindkey '^[[1~' beginning-of-line
+# bindkey '^[[4~' end-of-line
+# bindkey '^[[3~' delete-char
 
 if brew --version > /dev/null 2>&1; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
