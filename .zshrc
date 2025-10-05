@@ -8,12 +8,12 @@ if brew --version > /dev/null 2>&1; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-autoload -Uz compinit && compinit
-
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
 [ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 source "${ZINIT_HOME}/zinit.zsh"
+
+autoload -Uz compinit && compinit
 
 zinit light zsh-users/zsh-autosuggestions
 export LC_ALL=en_US.UTF-8
@@ -25,6 +25,8 @@ zinit light MichaelAquilina/zsh-you-should-use
 zinit light arzzen/calc.plugin.zsh
 zinit light atuinsh/atuin
 zinit light hlissner/zsh-autopair
+eval "$(zoxide init zsh)"
+[ -f $HOMEBREW_PREFIX/share/forgit/forgit.plugin.zsh ] && source $HOMEBREW_PREFIX/share/forgit/forgit.plugin.zsh
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
@@ -42,16 +44,14 @@ setopt HIST_FIND_NO_DUPS         # Do not display a line previously found.
 setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history file.
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 
-eval "$(zoxide init zsh)"
-
 export PATH="$HOME/.cargo/bin:$PATH"
 
 neofetch
 
 alias -- cd=z
 alias -- k=kubectl
-alias -- ll='eza -alh'
-alias -- ls=eza
+alias -- ll='eza -alh --git --icons --group --group-directories-first --time-style=long-iso --color-scale=all'
+alias -- ls='eza --git --icons --group --group-directories-first --time-style=long-iso --color-scale=all'
 alias -- tree='eza --tree'
 alias -- x='cargo xtask'
 alias -- zz='z -'
