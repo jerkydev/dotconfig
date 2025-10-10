@@ -21,11 +21,11 @@ STATE_FILE="/tmp/hypr_mirror_state"
 apply_extend_mode() {
     local external="$1"
     notify "🔄 Switching to EXTEND mode"
-    if [[ -n "$external" ]]; then
-        hyprctl keyword monitor "$external,5120x2880,0x0,1"
-        hyprctl keyword monitor "$LAPTOP,1920x1200,0x0,1"
+    if [[ -n "${external}" ]]; then
+        hyprctl keyword monitor "$external,5120x2880,auto,2"
+        hyprctl keyword monitor "$LAPTOP,preferred,auto,1"
     else
-        hyprctl keyword monitor "$LAPTOP,1920x1200,0x0,1"
+        hyprctl keyword monitor "$LAPTOP,preferred,auto,1"
     fi
     echo "extend" > "$STATE_FILE"
     hyprctl reload
@@ -34,8 +34,8 @@ apply_extend_mode() {
 apply_mirror_mode() {
     local external="$1"
     notify "🪞 Switching to MIRROR mode"
-    hyprctl keyword monitor "$external,1920x1080,0x0,1"
-    hyprctl keyword monitor "$LAPTOP,1920x1080,0x0,1,mirror,$external"
+    hyprctl keyword monitor "$external,5120x2880,0x0,2"
+    hyprctl keyword monitor "$LAPTOP,5120x2880,0x0,2,mirror,$external"
     echo "mirror" > "$STATE_FILE"
     hyprctl reload
 }
@@ -49,6 +49,7 @@ toggle_manual() {
     external=$(get_external_monitor)
     if [[ -z "$external" ]]; then
         notify "⚠️ No external monitor connected."
+        apply_extend_mode
         return
     fi
 
