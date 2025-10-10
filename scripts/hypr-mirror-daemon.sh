@@ -4,28 +4,28 @@
 
 set -e
 
+notify() {
+    local message="$1"
+    notify-send -a "HyprMirror" -t 2500 "${message}"
+    echo "${message}"
+}
+
 LAPTOP=$(hyprctl monitors | grep -oE '^Monitor eDP-[0-9]+' | head -n1 | awk '{print $2}')
-if [[ -z "$LAPTOP" ]]; then
-    notify-send "HyprMirror" "❌ No internal laptop screen (eDP) found."
+if [[ -z "${LAPTOP}" ]]; then
+    notify "HyprMirror" "❌ No internal laptop screen (eDP) found."
     exit 1
 fi
 
 STATE_FILE="/tmp/hypr_mirror_state"
-
-notify() {
-    local message="$1"
-    notify-send -a "HyprMirror" -t 2500 "$message"
-    echo "$message"
-}
 
 apply_extend_mode() {
     local external="$1"
     notify "🔄 Switching to EXTEND mode"
     if [[ -n "$external" ]]; then
         hyprctl keyword monitor "$external,5120x2880,0x0,1"
-        hyprctl keyword monitor "$LAPTOP,1920x1080,0x0,1"
+        hyprctl keyword monitor "$LAPTOP,1920x1200,0x0,1"
     else
-        hyprctl keyword monitor "$LAPTOP,1920x1080,0x0,1"
+        hyprctl keyword monitor "$LAPTOP,1920x1200,0x0,1"
     fi
     echo "extend" > "$STATE_FILE"
     hyprctl reload
