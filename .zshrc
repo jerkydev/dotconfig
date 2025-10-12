@@ -46,8 +46,6 @@ setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording en
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-neofetch
-
 alias -- cd=z
 alias -- k=kubectl
 alias -- ll='eza -alh --git --icons --group --group-directories-first --time-style=long-iso --color-scale=all'
