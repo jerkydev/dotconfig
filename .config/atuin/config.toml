@@ -1,0 +1,7 @@
+style = "full"
+update_check = false
+sync_address = ""
+search_mode = "fulltext"
+prefers_reduced_motion = true
+inline_height = 15
+enter_accept = true
