@@ -1,7 +1,8 @@
 if [ -z ${TMUX} ] && [ -z ${SSH_TTY} ]; then; tmux -t tmux || tmux new -s tmux; fi
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-    eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/mocha.omp.json)"
+    # eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/mocha.omp.json)"
+    eval "$(starship init zsh)"
 fi
 
 if brew --version > /dev/null 2>&1; then
