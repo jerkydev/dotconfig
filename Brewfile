@@ -24,6 +24,7 @@ cask "zoom"
 # CLI
 
 brew "atuin"
+brew "b2sum"
 brew "duf"
 brew "eza"
 brew "fd"
