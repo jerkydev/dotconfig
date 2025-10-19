@@ -1,7 +1,4 @@
-#theme = "Catppuccin Mocha
-
-# Dynamic theme colors
-config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+theme = "Catppuccin Mocha"
 
 # Font
 font-family = "CaskaydiaMono Nerd Font"
