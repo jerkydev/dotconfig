@@ -2,6 +2,7 @@
 
 cask "container"
 cask "deezer"
+cask "docker"
 cask "font-meslo-lg-nerd-font"
 cask "ghostty"
 cask "iina"
