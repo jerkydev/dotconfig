@@ -16,18 +16,17 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 autoload -Uz compinit && compinit
 
+zinit light Aloxaf/fzf-tab
 zinit light zsh-users/zsh-autosuggestions
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 zinit light zdharma-continuum/fast-syntax-highlighting
-zinit light Aloxaf/fzf-tab
 zinit light MichaelAquilina/zsh-you-should-use
 zinit light arzzen/calc.plugin.zsh
 zinit light atuinsh/atuin
 zinit light hlissner/zsh-autopair
 eval "$(zoxide init zsh)"
-[ -f $HOMEBREW_PREFIX/share/forgit/forgit.plugin.zsh ] && source $HOMEBREW_PREFIX/share/forgit/forgit.plugin.zsh
 
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
