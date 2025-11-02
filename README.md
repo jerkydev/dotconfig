@@ -14,4 +14,5 @@ My working environment configs
    ./scripts/tweak_macos.sh
    ```
 1. Reboot
+1. Don't forget to install tmux plugins (Md-I)
 
