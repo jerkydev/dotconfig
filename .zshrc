@@ -54,3 +54,4 @@ alias -- tree='eza --tree'
 alias -- x='cargo xtask'
 alias -- zz='z -'
 alias -- hx=helix
+alias -- y=yazi
