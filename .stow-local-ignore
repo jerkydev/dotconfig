@@ -1,5 +1,7 @@
 .git
 .gitmodules
 .gitignore
+pacman.txt
+paru.txt
 LICENSE
 README.md
