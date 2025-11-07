@@ -1,9 +1,7 @@
 environment {
-    // QT_STYLE_OVERRIDE "kvantum"
-    // QT_QPA_PLATFORM "wayland"
-    // QT_QPA_PLATFORMTHEME "qt5ct"
-    // QT_QPA_WAYLANDDECORATION "1"
 }
+
+prefer-no-csd
 
 input {
     keyboard {
@@ -35,6 +33,7 @@ input {
 layout {
     gaps 16
     center-focused-column "never"
+    background-color "#26233a"
     preset-column-widths {
         proportion 0.33333
         proportion 0.5
@@ -42,16 +41,13 @@ layout {
     }
     default-column-width { proportion 0.5; }
     focus-ring {
-        width 2
+        width 3
         active-color "#ebbcba"
         inactive-color "#505050"
     }
 
     border {
         off
-        active-color "#ffc87f"
-        inactive-color "#505050"
-        urgent-color "#9b0000"
     }
 
     shadow {
@@ -75,17 +71,6 @@ animations {
 }
 
 window-rule {
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
-
-
-window-rule {
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-}
-
-/-window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
 
@@ -93,9 +78,16 @@ window-rule {
 
 }
 
-/-window-rule {
-    geometry-corner-radius 12
+window-rule {
+    match app-id="librewolf"
+
     clip-to-geometry true
+}
+
+window-rule {
+    match is-active=false
+
+    opacity 0.80
 }
 
 binds {
