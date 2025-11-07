@@ -33,3 +33,6 @@ stow
 less
 tmux
 yazi
+hyprpolkitagent
+xdg-desktop-portal-gnome
+gnome-keyring
