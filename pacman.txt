@@ -36,3 +36,4 @@ yazi
 hyprpolkitagent
 xdg-desktop-portal-gnome
 gnome-keyring
+marksman
