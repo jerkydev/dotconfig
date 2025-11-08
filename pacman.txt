@@ -37,3 +37,5 @@ hyprpolkitagent
 xdg-desktop-portal-gnome
 gnome-keyring
 marksman
+impala
+wiremix
