@@ -2,7 +2,8 @@
 
 cask "container"
 cask "deezer"
-cask "docker"
+cask "docker-desktop"
+cask "firefox"
 cask "font-meslo-lg-nerd-font"
 cask "ghostty"
 cask "iina"
@@ -20,7 +21,6 @@ cask "telegram"
 cask "the-unarchiver"
 cask "ukelele"
 cask "visual-studio-code"
-cask "zen"
 cask "zoom"
 
 # CLI
