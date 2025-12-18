@@ -69,6 +69,7 @@ window-rule {
 
 window-rule {
     match app-id="librewolf"
+    match app-id="firefox"
 
     clip-to-geometry true
 }
