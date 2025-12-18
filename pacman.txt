@@ -39,3 +39,11 @@ gnome-keyring
 marksman
 impala
 wiremix
+firefox
+bluetui
+nvim
+tree-sitter-cli
+ripgrep
+clang
+acpi
+papers
