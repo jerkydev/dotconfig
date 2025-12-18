@@ -1,4 +1,3 @@
 librewolf-bin
-limine-mkinitcpio-hook
-limine-snapper-sync
 dprint-bin
+gazelle-tui
