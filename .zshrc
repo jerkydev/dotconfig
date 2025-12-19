@@ -55,5 +55,4 @@ alias -- x='cargo xtask'
 alias -- zz='z -'
 alias -- hx=helix
 alias -- y=yazi
-alias -- wifi=gazelle
 alias -- sound=wiremix

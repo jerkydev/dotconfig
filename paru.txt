@@ -1,4 +1,3 @@
 librewolf-bin
 dprint-bin
-gazelle-tui
 ashell-git
