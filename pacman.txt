@@ -46,3 +46,6 @@ ripgrep
 clang
 acpi
 papers
+pipewire-pulse
+power-profiles-daemon
+upower
