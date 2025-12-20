@@ -8,6 +8,8 @@ prefer-no-csd
 input {
     keyboard {
         xkb {
+            layout "us,ru"
+            options "grp:alt_shift_toggle"
         }
         numlock
     }
@@ -36,7 +38,7 @@ layout {
     }
     default-column-width { proportion 0.5; }
     focus-ring {
-        width 3
+        width 1
         active-color "#ebbcba"
         inactive-color "#505050"
     }
