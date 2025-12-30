@@ -49,3 +49,10 @@ papers
 pipewire-pulse
 power-profiles-daemon
 upower
+pavucontrol
+telegram-desktop
+btop
+lldb
+gitui
+uv
+nix
