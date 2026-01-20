@@ -9,5 +9,7 @@ My working environment configs
    cd .dotconfig
    git submodule update --init --recursive
    stow .
+   ya pkg install
    ```
+1. Install tmux plugins
 1. Reboot

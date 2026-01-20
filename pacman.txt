@@ -15,6 +15,7 @@ vim
 helix
 ghostty
 nautilus
+sushi
 fuzzel
 atuin
 zsh
@@ -24,8 +25,6 @@ zoxide
 fd
 fzf
 git
-keepassxc
-qt5-wayland
 vulkan-radeon
 brightnessctl
 inetutils
@@ -50,9 +49,13 @@ pipewire-pulse
 power-profiles-daemon
 upower
 pavucontrol
-telegram-desktop
 btop
 lldb
 gitui
 uv
 nix
+flatpak
+libimobiledevice
+usbmuxd
+gvfs-gphoto2
+mpv
