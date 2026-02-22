@@ -3,6 +3,7 @@
 .gitignore
 pacman.txt
 paru.txt
-services.txt
+services.sh
+work.txt
 LICENSE
 README.md
