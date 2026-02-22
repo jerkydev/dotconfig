@@ -1,3 +1,2 @@
-librewolf-bin
 dprint-bin
-ashell-git
+ashell

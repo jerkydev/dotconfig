@@ -9,6 +9,7 @@ My working environment configs
    cd .dotconfig
    git submodule update --init --recursive
    stow .
+   sudo pacman -S --needed - < pacman.txt
    ya pkg install
    ```
 1. Install tmux plugins
