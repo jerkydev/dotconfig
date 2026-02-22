@@ -5,6 +5,8 @@ bolt
 brightnessctl
 btop
 clang
+docker
+docker-compose
 eza
 fd
 flatpak
