@@ -1,3 +1,4 @@
 dprint-bin
 ashell
 asdbctl
+slack-desktop-wayland
