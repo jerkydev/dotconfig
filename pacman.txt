@@ -45,4 +45,5 @@ vulkan-radeon
 wiremix
 xdg-desktop-portal-gtk
 yazi
+zed
 zoxide
