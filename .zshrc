@@ -53,4 +53,3 @@ alias -- ls='eza --git --icons --group --group-directories-first --time-style=lo
 alias -- tree='eza --tree'
 alias -- x='cargo xtask'
 alias -- zz='z -'
-alias -- hx=helix

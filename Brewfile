@@ -14,6 +14,7 @@ cask "sublime-text"
 cask "the-unarchiver"
 cask "ukelele"
 cask "visual-studio-code"
+cask "zed"
 
 # CLI
 
