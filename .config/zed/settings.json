@@ -10,6 +10,9 @@
   "helix_mode": true,
   "buffer_line_height": "comfortable",
   "buffer_font_family": ".ZedMono",
+  "inlay_hints": {
+    "enabled": true,
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
