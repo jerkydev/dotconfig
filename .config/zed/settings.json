@@ -28,6 +28,6 @@
   "auto_install_extensions": {
     "fleet-themes": true,
     "dockerfile": true,
-    "toml": true
-  }
+    "toml": true,
+  },
 }
