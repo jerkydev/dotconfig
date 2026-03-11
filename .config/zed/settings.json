@@ -25,4 +25,9 @@
   "ui_font_size": 16,
   "buffer_font_size": 16.0,
   "theme": "Fleet Dark Purple",
+  "auto_install_extensions": {
+    "fleet-themes": true,
+    "dockerfile": true,
+    "toml": true
+  }
 }
