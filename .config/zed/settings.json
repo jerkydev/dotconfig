@@ -30,4 +30,5 @@
     "dockerfile": true,
     "toml": true,
   },
+  "relative_line_numbers": "enabled",
 }
