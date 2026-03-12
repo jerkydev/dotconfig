@@ -29,6 +29,7 @@
     "fleet-themes": true,
     "dockerfile": true,
     "toml": true,
+    "docker-compose": true,
   },
   "relative_line_numbers": "enabled",
 }
